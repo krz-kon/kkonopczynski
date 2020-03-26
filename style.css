@@ -139,6 +139,7 @@ header #toggle::after {
  font-size: 1.2em;
  color: #fff;
  font-weight: 300;
+ margin: 20px 0;
 }
 
 .content a {
