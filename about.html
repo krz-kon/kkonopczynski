@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Krzysztof Konopczyński</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+ <section class="banner" id="sec">
+  <header>
+   <div class="czesc">O mnie</div>
+   <div id="toggle" onclick="toggle()"></div>
+  </header>
+  <div class="content">
+   <p>Jestem absolwentem Polsko-japońsiej Akademii Technik Komputerowych i ukończyłem kierunek Sztuki Nowych Mediów.
+    Jednym z moich ulubionych przedmiotów były Podstawy Programowania. Dzięki temu, że je poznałem, teraz rozwijam się w
+    tym kierunku i stale uczę się nowych rzeczy w szeroko rozumianym Web Developmencie.</p>
+   <p>Aktualnie bardzo dobrze czuję się używając języka HTML i CSS. Java Scriptu cały czas się uczę i choć poznałem już
+    jego podstawy, to nieustannie odkrywa on przede mną nowe rzeczy, które chętnie poznaję i stosuję w codziennej nauce.
+    Zacząłem również zgłębiać tajniki biblioteki React i z dnia na dzień fascynuje mnie ona coraz bardziej.
+   </p>
+   <p>Na codzień korzystam również z systemu kontroli wercji GIT, preprocesora CSS Sass oraz biblioteki JS Jquery.</p>
+   <p>Mam bardzo duże doświadczenie graficzne, co pomaga mi przy projektowaniu stron i perfekcyjnie opanowałem programy
+    Adobe Photoshop i Adobe Illustrator.</p>
+   <p>Jeśli chcesz wiedzieć o mnie więcej, to chętnie się z Tobą spotkam!</p>
+  </div>
+ </section>
+ <div id="navigation">
+  <ul>
+   <li><a href="index.html">Strona główna</a></li>
+   <li><a href="#">O mnie</a></li>
+   <li><a href="contact.html">Kontakt</a></li>
+  </ul>
+ </div>
+ <script type="text/javascript">
+  function toggle() {
+   var sec = document.getElementById('sec');
+   var nav = document.getElementById('navigation');
+   sec.classList.toggle('active');
+   nav.classList.toggle('active');
+  }
+ </script>
+</body>
+
+</html>

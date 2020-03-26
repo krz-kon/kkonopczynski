@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Krzysztof Konopczyński</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+ <section class="banner" id="sec">
+  <header>
+   <div class="czesc">Cześć</div>
+   <div id="toggle" onclick="toggle()"></div>
+  </header>
+  <div class="content">
+   <h2>Nazywam się <span>Krzysztof Konopczyński</span></h2>
+   <p>Cieszę się, że tu jesteś! Ta strona ma za zadanie przedstawić Ci mnie, pokazać czym się interesuję, w jakich
+    kierunkach rozwijam i zachęcić do nawiązania ze mną współpracy. Mam ogromną nadzieję, że tak właśnie będzie i
+    niedługo poznamy się osobiście!</p>
+  </div>
+ </section>
+ <div id="navigation">
+  <ul>
+   <li><a href="#">Strona główna</a></li>
+   <li><a href="about.html">O mnie</a></li>
+   <li><a href="contact.html">Kontakt</a></li>
+  </ul>
+ </div>
+ <script type="text/javascript">
+  function toggle() {
+   var sec = document.getElementById('sec');
+   var nav = document.getElementById('navigation');
+   sec.classList.toggle('active');
+   nav.classList.toggle('active');
+  }
+ </script>
+</body>
+
+</html>

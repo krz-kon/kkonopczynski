@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Krzysztof Konopczyński</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+ <section class="banner" id="sec">
+  <header>
+   <div class="czesc">Kontakt</div>
+   <div id="toggle" onclick="toggle()"></div>
+  </header>
+  <div class="content">
+   <h2>mail: <span>krz.konopczyński@gmail.com</span></h2>
+   <h2>telefon: <span>724-794-567</span></h2>
+  </div>
+ </section>
+ <div id="navigation">
+  <ul>
+   <li><a href="index.html">Strona główna</a></li>
+   <li><a href="about.html">O mnie</a></li>
+   <li><a href="#">Kontakt</a></li>
+  </ul>
+ </div>
+ <script type="text/javascript">
+  function toggle() {
+   var sec = document.getElementById('sec');
+   var nav = document.getElementById('navigation');
+   sec.classList.toggle('active');
+   nav.classList.toggle('active');
+  }
+ </script>
+</body>
+
+</html>
