@@ -121,7 +121,7 @@ header #toggle::after {
  transition: .5s;
 }
 
-#navigation ul li a:hover {
+#navigation ul li a :hover {
  color: #40c3ff;
 }
 
