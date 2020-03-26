@@ -133,7 +133,6 @@ header #toggle::after {
 .content h2 span {
  color: #40c3ff;
  font-size: 1.2em;
- border-bottom: 2px solid white;
 }
 
 .content p {
