@@ -37,7 +37,7 @@ header .toggle {
  cursor: pointer;
 }
 
-header .toggle::before {
+header #toggle::before {
  content: '';
  position: absolute;
  top: 7px;
@@ -46,7 +46,7 @@ header .toggle::before {
  background: #fff;
 }
 
-header .toggle::after {
+header #toggle::after {
  content: '';
  position: absolute;
  bottom: 7px;
@@ -55,13 +55,13 @@ header .toggle::after {
  background: #fff;
 }
 
-.banner.active header .toggle::before {
+.banner.active header #toggle::before {
  top: 50%;
  left: 50%;
  transform: translate(-50%, -50%) rotate(45deg);
 }
 
-.banner.active header .toggle::after {
+.banner.active header #toggle::after {
  top: 50%;
  left: 50%;
  transform: translate(-50%, -50%) rotate(-45deg);
