@@ -28,6 +28,7 @@ header .czesc {
  text-transform: uppercase;
  letter-spacing: 2px;
  transition: .6s;
+ border-bottom: 2px solid white;
 }
 
 header #toggle {
@@ -118,7 +119,12 @@ header #toggle::after {
  font-size: 2em;
  font-weight: 600;
  text-transform: uppercase;
- transition: .5s;
+ /* transition: .5s; */
+}
+
+#navigation ul li :hover{
+ color: #40c3ff;
+ border-bottom: 2px solid white;
 }
 
 .content {
@@ -133,7 +139,6 @@ header #toggle::after {
 
 .content h2 span {
  color: #40c3ff;
- font-size: 1.2em;
 }
 
 .content p {
@@ -154,6 +159,12 @@ header #toggle::after {
  font-size: 0.8em;
  font-weight: 500;
 }
+
+.slideInLeft {
+ animation-name: slideInLeft;
+ animation-duration: 1s;
+ animation-fill-mode: both;
+ }
 
 @media (max-width: 767px) {
  header {
@@ -186,3 +197,27 @@ header #toggle::after {
   margin: 5px 0;
  }
 }
+
+
+@-webkit-keyframes slideInLeft {
+ 0% {
+ -webkit-transform: translateX(-100%);
+ transform: translateX(-100%);
+ visibility: visible;
+ }
+ 100% {
+ -webkit-transform: translateX(0);
+ transform: translateX(0);
+ }
+ }
+ @keyframes slideInLeft {
+ 0% {
+ -webkit-transform: translateX(-100%);
+ transform: translateX(-100%);
+ visibility: visible;
+ }
+ 100% {
+ -webkit-transform: translateX(0);
+ transform: translateX(0);
+ }
+ } 
