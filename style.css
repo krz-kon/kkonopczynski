@@ -30,14 +30,14 @@ header .czesc {
  transition: .6s;
 }
 
-header #toggle {
+header .toggle {
  position: relative;
  width: 30px;
  height: 30px;
  cursor: pointer;
 }
 
-header #toggle::before {
+header .toggle::before {
  content: '';
  position: absolute;
  top: 7px;
@@ -46,7 +46,7 @@ header #toggle::before {
  background: #fff;
 }
 
-header #toggle::after {
+header .toggle::after {
  content: '';
  position: absolute;
  bottom: 7px;
@@ -55,13 +55,13 @@ header #toggle::after {
  background: #fff;
 }
 
-.banner.active header #toggle::before {
+.banner.active header .toggle::before {
  top: 50%;
  left: 50%;
  transform: translate(-50%, -50%) rotate(45deg);
 }
 
-.banner.active header #toggle::after {
+.banner.active header .toggle::after {
  top: 50%;
  left: 50%;
  transform: translate(-50%, -50%) rotate(-45deg);
@@ -84,7 +84,7 @@ header #toggle::after {
  transform: translateX(-400px);
 }
 
-#navigation {
+.navigation {
  position: fixed;
  top: 0;
  right: -200px;
@@ -97,21 +97,21 @@ header #toggle::after {
  transition: .5s;
 }
 
-#navigation.active {
+.navigation.active {
  right: 0;
 }
 
-#navigation ul {
+.navigation ul {
  position: relative;
  display: flex;
  flex-direction: column;
 }
 
-#navigation ul li {
+.navigation ul li {
  list-style: none;
 }
 
-#navigation ul li a {
+.navigation ul li a {
  color: #fff;
  text-decoration: none;
  display: inline-block;
@@ -177,11 +177,11 @@ header #toggle::after {
   transform: translateX(-250px);
  }
 
- #navigation {
+ .navigation {
   width: 250px;
  }
 
- #navigation ul li a {
+ .navigation ul li a {
   font-size: 1.5em;
   margin: 5px 0;
  }
