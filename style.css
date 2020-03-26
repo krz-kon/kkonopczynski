@@ -118,6 +118,11 @@ header #toggle::after {
  font-size: 2em;
  font-weight: 600;
  text-transform: uppercase;
+ transition: .5s;
+}
+
+#navigation ul li a:hover {
+ color: #40c3ff;
 }
 
 .content {
