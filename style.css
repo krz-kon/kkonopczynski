@@ -73,8 +73,9 @@ header #toggle::after {
  width: 100%;
  min-height: 100vh;
  padding: 100px;
- background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(0, 107, 141, 1) 0%, rgba(0, 69, 91, 1) 90%);
- background-size: cover;
+ background: linear-gradient(to right, rgba(0,77,153,1) 0%, rgba(32,124,229,1) 49%, rgba(0,145,217,1) 100%);
+	background-size: 400% 400%;
+	animation: gradient 20s ease infinite;
  display: flex;
  align-items: center;
  transition: .5s;
@@ -83,6 +84,16 @@ header #toggle::after {
 
 .banner.active {
  transform: translateX(-400px);
+}
+
+h2 a {
+ text-decoration: none;
+ color: #40c3ff;
+ font-size: 1em;
+}
+
+span :hover {
+ color: rgb(13, 1, 66);
 }
 
 #navigation {
@@ -135,10 +146,11 @@ header #toggle::after {
 .content h2 {
  color: #fff;
  font-size: 1.5em;
+ margin: 50px 0;
 }
 
 .content h2 span {
- color: #40c3ff;
+ 
 }
 
 .content p {
@@ -146,18 +158,6 @@ header #toggle::after {
  color: #fff;
  font-weight: 300;
  margin: 20px 0;
-}
-
-.content a {
- position: relative;
- display: inline-block;
- margin-top: 20px;
- background: #000;
- color: #fff;
- padding: 10px 30px;
- text-decoration: none;
- font-size: 0.8em;
- font-weight: 500;
 }
 
 .slideInLeft {
@@ -221,3 +221,17 @@ header #toggle::after {
  transform: translateX(0);
  }
  } 
+
+ @keyframes gradient {
+  0% {
+   background-position: 0% 50%;
+  }
+  50% {
+   background-position: 100% 50%;
+  }
+  100% {
+   background-position: 0% 50%;
+  }
+ }
+
+ 
